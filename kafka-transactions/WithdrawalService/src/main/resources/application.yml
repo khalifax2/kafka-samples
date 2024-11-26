@@ -1,0 +1,14 @@
+server:
+  port: 0
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: amount-widthrawal-event
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.appsdeveloperblog.*
+      isolation-level: read_committed

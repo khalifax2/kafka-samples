@@ -1,0 +1,32 @@
+server:
+  port: 0
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+#      retries: 10
+#      properties:
+#        retry:
+#          backoff:
+#            ms: 1000
+      properties:
+        delivery:
+          timeout:
+            ms: 120000 # Overall timeout this should be >= linger + request.timeout
+        linger:
+          ms: 0 # how long will wait before sending
+        request:
+          timeout:
+            ms: 30000 # timeout for single request for response from broker
+        enable:
+          idempotence: true
+        max:
+          in:
+            flight:
+              requests:
+                per:
+                  connection: 5

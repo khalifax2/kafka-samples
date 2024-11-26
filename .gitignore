@@ -1,0 +1,73 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+pom.xml.versionsBackup
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+.gradletasknamecache/
+wrapper/
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.nib
+.local.properties
+.settings/
+.loadpath
+.recommenders
+.launch
+.pydevproject
+.cproject
+.autotools
+.target
+.tern-project
+.texlipse
+.nbproject/private/
+.nbbuild/
+.dist/
+.nbdist/
+.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Log files
+*.log
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Miscellaneous
+*.java.hsp
+*.sonarqube
+*.swp
+.DS_Store
+build.sh
+integration-repo
+ivy-cache
+argfile*
+activemq-data
+/classes/
+jxl.log
+jmx.log
+derby.log
+.vscode/
+node_modules
